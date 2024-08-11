@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpot - dev-center</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+        <img src="CDN/STUDYSPOTDEVLOGO.jpg"
+        width="150" height="200"
+        alt="StduySpot dev-center">
+  </a>
+
+          <div class="icon" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+        <div id="myLinks">
+            <a href="/Articles.html">Articles</a>
+            <a href="https://google.com">Contact us</a>
+        </div>
+</header>
+
+    <div class="content">
+        <h1>Upcoming features</h1>
+        <h2>read aloud</h2>
+        <p>this feature allows the user to listen to a article.</p>
+        <h2>search</h2>
+        <p>this feature allows the user to search!</p>
+        <h2>languages</h2>
+        <p>this feature allows the user to view a article in a different language.</p>
+        <div class="translate-button">
+            <button onclick="toggleDropdown()"><i class="fas fa-language"></i></button>
+            <div id="dropdown" class="dropdown-content">
+                <a href="#" onclick="translatePage('en')">English</a>
+                <a href="#" onclick="translatePage('hi')">हिंदी(Hindi)</a
+                <a href="#" onclick="translatePage('bn')">   বাংলা(Bengali)</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
