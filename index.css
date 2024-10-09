@@ -1,131 +1,42 @@
-       body {
+    @media screen and (max-width: 1024px) {
+      #tv-only-content {
+        display: none;
+      }
+    }
+           body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             margin-top: 100px;
             padding: 0;
         }
+        
+.header {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 60;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
 
-        h1 {
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .content {
-            background-color: white;
-            cursor: pointer;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 30px;
-            max-width: 600px;
-        } 
-        .header { 
-            background-color: #ffffff;
-            color: black;
-            text-align: left;
-            padding: 20px;
-            margin-bottom: 20px;
-            position: fixed;
-            display: flex;
-            flex-direction: row;
-            right: 0;
-            left: 0;
-            top: 0;
-            height: 30px;
-        }
-        iframe {
-            border: 1px solid white;
-            width: 100%;
-        }
-        a {
-            text-decoration: none;
-            color: #000000;
-        }
-        a:hover {
-            color: #000;
-        }
-        @media only screen and (min-width: 500px) {
-            video {
-                width: 100%; /* Stretch the video to fill the container */
-            }
-        }
-        .menu {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        #myLinks {
-            display: none;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgb(169,169,169);
-            padding: 10px 20px;
-        }
-        #myLinks a {
-            display: block;
-            margin-bottom: 10px;
-            color: #000;
-        }        
-        .menu-side {
-          display: flex;
-          position: fixed;
-          justify-content: centre;
-          margin-top: 70px;
-          align-content: centre;
-          background-color: #fff;
-          bottom: 0;
-          top: 0;
-          left: 100px;
-          right: 0;
-          z-index: 1;
-        }
-        .menu-side-down {
-          margin-top: 380px;
-        }
-        .menu {
-            cursor: pointer;
-             font-size: 24px;
-       }
+.nav-t-i {
+    background-color: #515151;
+    padding: 10px;
+}
 
-        .translate-button {
-            position: relative;
-            display: inline-block;
-        }
-        .translate-button button {
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .social {
-          display: inline-block;
-        }
-        .translate-button button:hover {
-            background-color: rgb(42,141,255);
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            border-radius: 5px;
-            z-index: 1;
-            margin-top: 10px;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            border-radius: 5px;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
- 
+.nav-o {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 10px;
+}
+
+h3 {
+    margin: 5px 0; 
+    color: #ddd;
+}
