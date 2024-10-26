@@ -1,0 +1,51 @@
+        .header { 
+            background-color: #ffffff;
+            color: black;
+            text-align: left;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            right: 0;
+            left: 0;
+            top: 0;
+            height: 30px;
+        }
+        
+        .menu {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #myLinks {
+            display: none;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgb(169,169,169);
+            padding: 10px 20px;
+        }
+        #myLinks a {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+        }        
+        .menu-side {
+          display: flex;
+          position: fixed;
+          justify-content: centre;
+          margin-top: 70px;
+          align-content: centre;
+          background-color: #fff;
+          bottom: 0;
+          top: 0;
+          left: 100px;
+          right: 0;
+          z-index: 1;
+        }
+        .menu-side-down {
+          margin-top: 380px;
+        }

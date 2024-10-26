@@ -1,0 +1,31 @@
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin-top: 100px;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        iframe {
+            border: 1px solid white;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover {
+            color: #000;
+        }
+        @media only screen and (min-width: 500px) {
+            video {
+                width: 100%; /* Stretch the video to fill the container */
+            }
+        }
