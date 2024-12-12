@@ -35,6 +35,9 @@
             top: 0;
             height: 30px;
         }
+        .comments {
+          margin: 20px auto;
+        }
         iframe {
             border: 1px solid white;
             width: 100%;
