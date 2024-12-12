@@ -38,6 +38,9 @@
         .comments {
           background-color: #fff;
           margin: 20px auto;
+          padding: 20px;
+          border-radius: 30px;
+          max-width: 600px;
         }
         iframe {
             border: 1px solid white;
