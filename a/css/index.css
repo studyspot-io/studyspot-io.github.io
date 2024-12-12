@@ -36,6 +36,7 @@
             height: 30px;
         }
         .comments {
+          background-color: #fff;
           margin: 20px auto;
         }
         iframe {
