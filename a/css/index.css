@@ -41,10 +41,12 @@
           padding: 20px;
           border-radius: 30px;
           max-width: 600px;
+          z-index: -1;
         }
         iframe {
             border: 1px solid white;
             width: 100%;
+            background-color: #fff;
         }
         a {
             text-decoration: none;
