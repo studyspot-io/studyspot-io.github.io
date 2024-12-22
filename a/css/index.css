@@ -50,7 +50,7 @@
             background-color: #fff;
         }
         a {
-            text-decoration: none;
+            text-decoration: underline;
             color: #000000;
         }
         a:hover {
