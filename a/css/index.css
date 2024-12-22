@@ -36,12 +36,13 @@
             height: 30px;
         }
         .like-comments {
-          background-color: #fff;
-          margin: 20px auto;
-          padding: 20px;
-          border-radius: 30px;
-          max-width: 600px;
-          z-index: -1;
+          background-color: white;
+            cursor: pointer;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 30px;
+            max-width: 600px;
+            z-index: -1;
         }
         iframe {
             border: 1px solid white;
