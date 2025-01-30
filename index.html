@@ -34,7 +34,23 @@
             }
         }
         function translatePage(language) {
-        }
+        }document.addEventListener("DOMContentLoaded", function () {
+    const cookiePopup = document.getElementById('cookie-popup');
+    const cookieBtn = document.getElementById('cookie-btn');
+
+    // Check if the cookie consent is already given
+    if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookiePopup.classList.add('show');
+        }, 1000); // Show popup after 1 second
+    }
+
+    cookieBtn.addEventListener('click', () => {
+        cookiePopup.classList.remove('show');
+        localStorage.setItem('cookieConsent', 'true');
+    });
+});
+
      </script>
      <style>
            .header { 
@@ -117,6 +133,46 @@
                 width: 100%; /* Stretch the video to fill the container */
             }
         }
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.cookie-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#cookie-popup p {
+    margin-right: 20px;
+}
+
+#cookie-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#cookie-btn:hover {
+    background-color: #0056b3;
+}
+
         
             .content {
             background-color: white;
@@ -153,6 +209,10 @@
           </div>
         </div>
       </div>
+      <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience.</p>
+        <button id="cookie-btn">Ok, got it</button>
+    </div>
     <div class="content">
    <!-- list of top 5 articles (latest) -->
         <h1>Latest articles</h1>
