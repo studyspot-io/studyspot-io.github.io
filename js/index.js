@@ -16,3 +16,18 @@
         }
         function translatePage(language) {
         }
+            const cookiePopup = document.getElementById('cookie-popup');
+    const cookieBtn = document.getElementById('cookie-btn');
+
+    // Check if the cookie consent is already given
+    if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookiePopup.classList.add('show');
+        }, 1000); // Show popup after 1 second
+    }
+
+    cookieBtn.addEventListener('click', () => {
+        cookiePopup.classList.remove('show');
+        localStorage.setItem('cookieConsent', 'true');
+    });
+});
