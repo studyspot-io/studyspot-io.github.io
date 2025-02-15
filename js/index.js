@@ -30,4 +30,4 @@ cookieBtn.addEventListener('click', () => {
   cookiePopup.classList.remove('show');
   localStorage.setItem('cookieConsent', 'true');
 });
-});
+);
