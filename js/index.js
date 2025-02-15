@@ -4,6 +4,7 @@
                 links.style.display = "none";
             } else {
                 links.style.display = "block";
+                console.log ("wow")
             }
         }
         function toggleDropdown() {
