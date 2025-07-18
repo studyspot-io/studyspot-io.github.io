@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Alphabet Transformer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Custom Alphabet Transformer</h1>
+  <textarea id="input" placeholder="Enter text"></textarea>
+  <button id="transform-btn">To Custom Alphabet</button>
+  <button id="reverse-transform-btn">From Custom Alphabet</button>
+  <div id="output"></div>
+  <script>
+    const customAlphabet = {
+      'A': 'U',
+      'B': 'M',
+      'C': 'UU',
+      'D': 'MM',
+      'E': 'VUU',
+      'F': 'MUMU',
+      'G': 'UUUU',
+      'H': 'MMMM',
+      'I': 'UM',
+      'J': 'MU',
+      'K': 'UUM',
+      'L': 'MMU',
+      'M': 'UMU',
+      'N': 'MUU',
+      'O': 'UUUM',
+      'P': 'MMMU',
+      'Q': 'MUMU',
+      'R': 'UMM',
+      'S': 'UMUMUM',
+      'T': 'MUUM',
+      'U': 'MMMM',
+      'V': 'UMUU',
+      'W': 'UUMU',
+      'X': 'MMUM',
+      'Y': 'MUM',
+      'Z': 'UMM'
+    };
+
+    function toCustomAlphabet(text) {
+      return text.toUpperCase().split('').map(char => customAlphabet[char] || char).join(' ');
+    }
+
+    function fromCustomAlphabet(text) {
+      const reverseAlphabet = Object.fromEntries(Object.entries(customAlphabet).map(([key, value]) => [value, key]));
+      const words = text.split(' ');
+      return words.map(word => reverseAlphabet[word] || word).join('');
+    }
+
+    document.getElementById('transform-btn').addEventListener('click', () => {
+      const inputText = document.getElementById('input').value;
+      const output = toCustomAlphabet(inputText);
+      document.getElementById('output').innerText = output;
+    });
+
+    document.getElementById('reverse-transform-btn').addEventListener('click', () => {
+      const inputText = document.getElementById('input').value;
+      const output = fromCustomAlphabet(inputText);
+      document.getElementById('output').innerText = output;
+    });
+  </script>
+</body>
+</html>
