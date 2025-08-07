@@ -1,5 +1,6 @@
 User-agent: *
-Allow: /a/*
+Allow: /a/
 Allow:
 
-Disallow:/CDN/*
+
+Disallow:/CDN/
