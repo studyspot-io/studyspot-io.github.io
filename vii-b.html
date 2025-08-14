@@ -66,43 +66,6 @@
     height: 30px;
   }
 
-  .menu {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  #myLinks {
-    display: none;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(169,169,169);
-    padding: 10px 20px;
-  }
-  #myLinks a {
-    display: block;
-    margin-bottom: 10px;
-    color: #000;
-  }
-  .menu-side {
-    display: flex;
-    position: fixed;
-    justify-content: centre;
-    margin-top: 70px;
-    align-content: centre;
-    background-color: #fff;
-    bottom: 0;
-    top: 0;
-    left: 100px;
-    right: 0;
-    z-index: 1;
-  }
-  .menu-side-down {
-    margin-top: 380px;
-  }
-
   body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -192,25 +155,6 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0"></script>
 
-<div class="header">
-<a href="">
-<img src="CDN/STUDYSPOTLOGO.jpg"
-width="150" height="200"
-alt="StduySpot Logo">
-</a>
-<div class="menu" onclick="toggleMenu()">
-&#9776;
-</div>
-<div id="myLinks" class="menu-side">
-<div class="menu-side-up">
-<a href="https://studyspot-io.github.io/"><h3>🏠 Home</h3></a>
-<a href="https://studyspot-io.github.io/class5?origin=home"><h3>Class 5</h3></a>
-<a href="https://studyspot-io.github.io/class6?origin=home"><h3>Class 6</h3></a>
-<a href="https://studyspot-io.github.io/class7?origin=home"><h3>Class 7</h3></a>
-<a href="https://studyspot-io.github.io/class8?origin=home"><h3>Class 8</h3></a>
-</div>
-</div>
-</div>
 <div id="cookie-popup" class="cookie-popup">
 <p>
 This website uses third party cookies 🍪 to ensure you get the best experience.
@@ -218,25 +162,7 @@ This website uses third party cookies 🍪 to ensure you get the best experience
 <button id="cookie-btn">Ok</button>
 </div>
 <div class="content">
-<!-- list of top 5 articles (latest) -->
-<h1>Latest articles</h1>
 </div>
-<div class="content">
-<h1>Follow us!</h1>
-<center>
-<a href="https://whatsapp.com/channel/0029VaXO8xp72WTmmGHrDA2L">
-<i class="fa-brands fa-whatsapp fa-5x" style="color: #000000;"></i>
-</a>
-<a href="https://www.youtube.com/@studyspot_web">
-<i class="fa-brands fa-youtube fa-5x" style="color: #000000;"></i>
-</a>
-</center>
-</div>
-<div class="content">
-<h1>Older articles</h1>
-<center>
-<!--older articles with the same pattern-->
-</center>
 
 <div class="fb-comments" data-href="https://studyspot-io.github.io" data-width="" data-numposts="30"></div>
 
@@ -244,8 +170,7 @@ This website uses third party cookies 🍪 to ensure you get the best experience
 <div class="content">
 <center>
 <h4>You have reached the bottom!</h4>
-<h4>If there is any problem with the website, please let us know!</h4>
-<h4>Email: feedback.studyspot@gmail.com or click on <a href="mailto:feedback.studyspot@gmail.com">Send email</a>.</h4>
+<h4></h
 </center>
 </div>
 </body>
