@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The open source study site - StudySpot</title>
+  <link rel="website icon"type="png" href="CDN/STUDY-S-LOGO.jpg">
+  <meta name="description" content="Home|Studyspot">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preload" href="css/general.css">
+  <link rel="preload" href="css/header.css">
+  <link rel="preload" href="css/content.css">
+  <link rel="preload" href="/js/index.js">
+
+<script src="https://studyspot-io.github.io/js/index.html"></script>
+<link rel="stylesheet" href="https://studyspot-io.github.io/css/content.css">
+<script>
+  function toggleMenu() {
+    var links = document.getElementById("myLinks");
+    if (links.style.display === "block") {
+      links.style.display = "none";
+    } else {
+      links.style.display = "block";
+    }
+  }
+  function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    } else {
+      dropdown.style.display = "block";
+    }
+  }
+  function translatePage(language) {}document.addEventListener("DOMContentLoaded", function () {
+    const cookiePopup = document.getElementById('cookie-popup');
+    const cookieBtn = document.getElementById('cookie-btn');
+
+    // Check if the cookie consent is already given
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(() => {
+        cookiePopup.classList.add('show');
+      }, 1000); // Show popup after 1 second
+    }
+
+    cookieBtn.addEventListener('click', () => {
+      cookiePopup.classList.remove('show');
+      localStorage.setItem('cookieConsent', 'true');
+    });
+  });
+</script>
+<style>
+  .header {
+    background-color: #ffffff;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 30px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #myLinks {
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(169,169,169);
+    padding: 10px 20px;
+  }
+  #myLinks a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  .menu-side {
+    display: flex;
+    position: fixed;
+    justify-content: centre;
+    margin-top: 70px;
+    align-content: centre;
+    background-color: #fff;
+    bottom: 0;
+    top: 0;
+    left: 100px;
+    right: 0;
+    z-index: 1;
+  }
+  .menu-side-down {
+    margin-top: 380px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin-top: 100px;
+    padding: 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover {
+    color: #000;
+  }
+  @media only screen and (min-width: 500px) {
+    video {
+      width: 100%;
+      /* Stretch the video to fill the container */
+    }
+  }
+  .cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1;
+  }
+
+  .cookie-popup.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #cookie-popup p {
+    margin-right: 20px;
+  }
+
+  #cookie-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  #cookie-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .fb-comments {
+    z-index: 0;
+  }
+  .content {
+    background-color: white;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 30px;
+    max-width: 600px;
+  }
+
+</style>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0"></script>
+
+<div class="header">
+<a href="">
+<img src="CDN/STUDYSPOTLOGO.jpg"
+width="150" height="200"
+alt="StduySpot Logo">
+</a>
+<div class="menu" onclick="toggleMenu()">
+&#9776;
+</div>
+<div id="myLinks" class="menu-side">
+<div class="menu-side-up">
+<a href="https://studyspot-io.github.io/"><h3>🏠 Home</h3></a>
+<a href="https://studyspot-io.github.io/class5?origin=home"><h3>Class 5</h3></a>
+<a href="https://studyspot-io.github.io/class6?origin=home"><h3>Class 6</h3></a>
+<a href="https://studyspot-io.github.io/class7?origin=home"><h3>Class 7</h3></a>
+<a href="https://studyspot-io.github.io/class8?origin=home"><h3>Class 8</h3></a>
+</div>
+</div>
+</div>
+<div id="cookie-popup" class="cookie-popup">
+<p>
+This website uses third party cookies 🍪 to ensure you get the best experience.
+</p>
+<button id="cookie-btn">Ok</button>
+</div>
+<div class="content">
+<!-- list of top 5 articles (latest) -->
+<h1>Latest articles</h1>
+</div>
+<div class="content">
+<h1>Follow us!</h1>
+<center>
+<a href="https://whatsapp.com/channel/0029VaXO8xp72WTmmGHrDA2L">
+<i class="fa-brands fa-whatsapp fa-5x" style="color: #000000;"></i>
+</a>
+<a href="https://www.youtube.com/@studyspot_web">
+<i class="fa-brands fa-youtube fa-5x" style="color: #000000;"></i>
+</a>
+</center>
+</div>
+<div class="content">
+<h1>Older articles</h1>
+<center>
+<!--older articles with the same pattern-->
+</center>
+
+<div class="fb-comments" data-href="https://studyspot-io.github.io" data-width="" data-numposts="30"></div>
+
+</div>
+<div class="content">
+<center>
+<h4>You have reached the bottom!</h4>
+<h4>If there is any problem with the website, please let us know!</h4>
+<h4>Email: feedback.studyspot@gmail.com or click on <a href="mailto:feedback.studyspot@gmail.com">Send email</a>.</h4>
+</center>
+</div>
+</body>
+</html>
