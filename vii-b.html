@@ -87,12 +87,13 @@
   a:hover {
     color: #000;
   }
-  iframe {
+iframe {
   margin: 0;
-  border-radius: 10px
+  border-radius: 10px;
   height: 100%;
   width: 100%;
-  }
+  border: none;
+}
   .cookie-popup {
     position: fixed;
     bottom: 20px;
@@ -137,14 +138,15 @@
   .fb-comments {
     z-index: 1;
   }
-  .content {
-    background-color: #fff;
-    cursor: pointer;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 30px;
-    max-width: 600px;
-  }
+.content {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 30px;
+  max-width: 600px;
+  overflow: hidden;
+}
 .floter {
   background-color: #f2f2f2;
   text-align: center;
