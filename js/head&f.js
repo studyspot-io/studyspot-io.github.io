@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => document.getElementById('header-container').innerHTML = data);
 
-    fetch('footer.html')
+    fetch('a/footer.html')
         .then(response => response.text())
         .then(data => document.getElementById('footer-container').innerHTML = data);
 });
