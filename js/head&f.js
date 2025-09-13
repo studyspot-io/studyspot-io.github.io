@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://studysphead.html')
+    fetch('https://studyspot-io.github.io/a/head.html')
         .then(response => response.text())
         .then(data => document.getElementById('header-container').innerHTML = data);
 
